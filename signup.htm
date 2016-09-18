@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<title>MY DREAM VALLEY</title>
+<style> 
+#mydiv{ 
+	background-image:url("latest.jpg");
+	background-size:100%;
+ 	background-repeat: no-repeat;
+	border:5px solid brown;
+	height:612px;
+	padding-top:218px;
+        padding-left:11px;
+	color:red;
+	line-height:2;
+ 	
+
+}
+#mahi{
+	
+	background-color:rgba(128, 0, 0, 0.04);
+	width:439px;
+	padding-left:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="mydiv">
+<form id="mahi">
+
+Name<br> 
+<table><tr><td>
+<input type="text" id="txtfname" placeholder="firstname"/> 
+<span id="errorfname" style="display:none; color:blue;">Fill the First Name.</span>
+</td>
+<td>
+<input type="text" id="txtlname" placeholder="lastname"/> 
+<span id="errorlname" style="display:none; color:blue;">Fill the Last Name.</span><br>
+</tr></td>
+</table>
+ 
+Email<br>
+
+
+<input type="text" id="txtemail" placeholder="Email"/> 
+<span id="erroremail" style="display:none; color:blue;">Enter the Email.</span>
+<span id="erroremail1" style="display:none; color:blue;">Enter valid Email.</span>
+
+<br>
+
+Password<br>
+<input type="password" id="pass" placeholder="Password"/> 
+<span id="errorpassword" style="display:none; color:blue;">Choose the Password.</span>
+<span id="errorpassword1" style="display:none; color:blue;">Choose the Password.</span>
+
+<br>
+
+ Mobile<br>
+
+<input type="text" id="txtmobile" placeholder="Mobile Number"/> 
+<span id="errormobile" style="display:none; color:blue;">Fill the Mobile Number.</span>
+
+<br>
+
+ Birthday<br>
+<select id="ddlmonths">
+ <option value="0">Month</option>
+ <option value="1">january</option>
+ <option value="2">febrary</option>
+ <option value="3">march</option>
+ <option value="4">april</option>
+ <option value="5">may</option>
+ <option value="6">june</option> 
+ <option value="7">july</option>
+ <option value="8">august</option>
+ <option value="9">september</option>
+ <option value="10">october</option>
+ <option value="11">novomber</option>
+ <option value="12">december</option>
+</select>
+<span id="errormonths" style="display:none; color:blue;">Fill the Month.</span>
+
+<input type="text" id="txtday" placeholder="Day" maxlength="2" size="2" /> 
+<span id="errorday" style="display:none; color:blue;">Fill the Day.</span>
+
+<input type="text" id="txtyear" placeholder="Year" maxlength="4" size="4"/> 
+<span id="erroryear" style="display:none; color:blue;">Fill the year.</span>
+<br>
+
+<input type="button" value="Sign up" onclick="validatemyform()"/>
+
+</form>
+</div>
+<script src="C:\Users\lakshmi\Desktop\UI\js\support.js"></script>
+
+</body>
+</html>
