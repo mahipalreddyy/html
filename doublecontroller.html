@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="angular.min.js"></script>
+    <script src="doublecontroller.js"></script>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div ng-app="flintstones">
+        <div ng-controller="flintstoneCtrl">
+            <label>Name:</label>
+            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+            <hr>
+            <h1>Hello {{yourName}}!</h1>
+        </div>
+    </div>
+    <div ng-app="rumbles">
+        <div ng-controller="rumbleCtrl">
+            <label>Name:</label>
+            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+            <hr>
+            <h1>Hello {{yourName}}!</h1>
+        </div>
+    </div>
+
+</body>
+</html>
